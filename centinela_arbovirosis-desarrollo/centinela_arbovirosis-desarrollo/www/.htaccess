@@ -1,0 +1,32 @@
+Options -Indexes
+
+#<IfModule mod_rewrite.c>
+
+# RewriteEngine on
+# RewriteCond $1 !^(index\.php)
+# RewriteRule ^(.*)$ index.php/$1 [L]
+
+#</IfModule>
+
+<IfModule mod_rewrite.c>
+
+ # allow_override On
+ # mod_rewrite is installed
+ 
+ RewriteEngine on
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+
+ <IfModule mod_php5.c>
+ RewriteRule ^(.*)$ index.php/$1 [L]
+ </IfModule>
+
+</IfModule>
+
+###############################################################
+# La sección que sigue es para forzar la llamada del https:// #
+###############################################################
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

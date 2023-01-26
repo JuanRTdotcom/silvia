@@ -1,0 +1,251 @@
+@charset "utf-8";
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background:#666;
+}
+.contenedor {
+	width: 99%;  /* el uso de 20px menos que un ancho completo de 800px da cabida a los bordes del navegador y evita la aparición de una barra de desplazamiento horizontal */
+	background: #FFFFFF; /* los márgenes automáticos (conjuntamente con un ancho) centran la página */
+	border: 1px solid #000000;
+	text-align: left; /* esto anula text-align: center en el elemento body. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+.encabezado {
+	background-color: #069;
+	height: 80px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 20px;
+}
+
+.encabezado h1 {
+	margin: 0; /* el ajuste en cero del margen del último elemento del div de #header evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+}
+
+.contenido {
+	height: 710px;
+	width: 80%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	float: left;
+	margin-left: 1%;
+} 
+
+.izquierda {
+	float: left; /* dado que este elemento es flotante, debe asignarse un ancho */
+	width: 15.7%; /* el ancho real de este div, en navegadores que cumplen los estándares, o el modo de estándares de Internet Explorer, incluirá el relleno y el borde además del ancho */
+	background: #EBEBEB;
+	height: 708px;
+	border: 1px solid #999;
+	padding: 0px;
+	font-size: 12px;
+}
+
+.derecha {
+	height: 710px;
+	width: 82.5%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	float: left;
+	margin-left: 1%;
+}
+
+.leyenda {
+	width: 100%;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+.leyenda1 {
+	position: absolute;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*.centro {
+	background: #FFFFFF;
+	height: 708px;
+	padding-top: 0;
+	padding-right: 20px;
+	padding-bottom: 0;
+	padding-left: 20px;
+}
+*/
+
+.semana {
+	float: left;
+	width: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 36px;
+	margin-left: 40px;
+}
+
+.pie {
+	padding: 0 10px;
+	background-color: #069;
+	line-height: 20px;
+	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+	text-align: center;
+	font-size: 8px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.pie p {
+	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+	text-align: center;
+	font-size: 10px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.clearbox {
+	clear: both;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.grafico {
+	width: 73%;
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.grafico1 {
+	float: left;
+	width: 49%;
+	border: 1px solid #CCC;
+	height: 245px;
+}
+.grafico2 {
+	float: right;
+	width: 49%;
+	border: 1px solid #CCC;
+	height: 245px;
+}
+
+.logo {
+	float: left;
+	width: 37%;
+	padding-top: 15px;
+}
+.titulo {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	width: 60%;
+	margin-top: 2px;
+	margin-left: 2%;
+	color: #FFF;
+	text-align: center;
+}
+.clearbox {
+	clear: both;
+}
+.list-menu{
+	padding:0;
+	list-style:none;
+	width:100%;
+	font-size:12px;
+	border: 1px solid rgba(0,0,0,0.8);
+	box-shadow: 0 0 10px rgba(0,0,0,0.9);
+	margin: 0px;
+}
+.list-menu li a{
+ display: block;
+ border-bottom: 1px solid rgba(0,0,0, 0.2);
+ border-top: 1px solid rgba(255,255,255, 0.2);
+ background: #0B243B;
+ text-decoration:none;
+ color:rgb(255,255,255);
+ text-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+ filter: dropshadow(color=#000, offx=1, offy=0);
+ padding:10px;
+ padding-left:20px;
+}
+ 
+.list-menu li ul li a{
+	font-size:12px;
+	color:rgb(71,104,157);
+	text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+ 
+}
+ 
+.list-menu li a:hover{
+ background: #0B3861;
+ -moz-transition: background 0.3s ease-in;
+ -webkit-transition: background 0.3s ease-in;
+ -o-transition: background 0.3s ease-in;
+ border: solid 1px rgba(0,0,0,0.3);
+}
+ 
+.list-menu ul{
+ margin:0;
+ padding:0;
+ list-style:none;
+ height:0;
+ overflow: hidden;
+ transition:1s;
+ -moz-transition:1s;
+ -webkit-transition:1s;
+}
+ 
+.list-menu li ul{
+ transition:1s;
+ -moz-transition:1s;
+ -webkit-transition:1s;
+}
+ 
+.list-menu li:hover ul{
+ height: 120px;
+ overflow-y:auto;
+ overflow-x:hidden;
+ background:rgba(108,151,176,0.5);
+}
+
+.list-menu ul li a{
+ background:rgb(250,250,250);
+}
+ 
+.list-menu ul li a:hover {
+ color: rgb(255,255,255);
+ -moz-transition: color 0.4s ease;
+ -webkit-transition: color 0.4s ease;
+ -o-transition: color 0.4s ease;
+ text-shadow: 0px 0px 2px rgba(0,0,0,0.7);
+}
+
+.cargando {
+width: 100%;height: 100%;
+overflow: hidden; 
+top: 0px;
+left: 0px;
+z-index: 10000;
+text-align: center;
+position:absolute; 
+background-color: #FFFFFF;
+opacity:0.6;
+filter:alpha(opacity=40);
+}
+
+.baja {
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+}

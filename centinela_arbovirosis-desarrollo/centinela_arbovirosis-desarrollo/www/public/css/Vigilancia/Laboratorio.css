@@ -1,0 +1,108 @@
+.box_titulo {
+    justify-content: space-between;
+}
+.info_f {
+    text-align: left;
+}
+.info_fe {
+    text-align: center;
+}
+._detalle_ficha{
+    font-size: 16px;
+    color: white;
+}
+._tt{
+    line-height: 1.1;
+}
+/* .agregar_fichas{
+    padding: 12px 20px !important;
+    color: #ffffff;
+    background-color: #101010;
+    border-color: #101010;
+    outline: none;
+    font-weight: 600;
+} */
+select{
+    border: 1px #cdd4e5 solid;
+    width: 100%;
+    height: 38px;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+select:disabled {
+ cursor: no-drop;
+}
+
+
+.bx_enfpru{
+    /* display: flex; */
+}
+.n_enfermedad{
+    font-size: 16px;
+    font-weight: 700;
+}
+.n_prueba{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(155, 155, 155);
+}
+.miIcoEnf svg{
+    width: 15px;
+    height: auto;
+}
+.miIcoEnf{
+    padding: 4px 8px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 4px;
+}
+.success_e{
+    color: #3cb900;
+    background: #dcfce4;
+
+}
+.danger_e{
+    color: #e70400;
+    background: #ffd0c4;
+
+}
+.warning_e{
+    color: #c9b100;
+    background: #fff6b4;
+
+}
+.info_e{
+    color: #8b00c9;
+    background: #ebccff;
+
+}   
+.secondary_e{
+    color: #000000;
+    background: #dfdfdf;
+
+}
+#agregar_muestras_laboratorio,#ver_muestras_laboratorio,#editar_muestras_laboratorio{
+	width: max-content;
+    margin: auto;
+  }
+
+  .anouncer_date{
+    background: rgb(220 220 220);
+    /* border: 1px #7239ea solid; */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #151515;
+    display: flex;
+    font-weight: 500;
+    /* box-shadow: 0px 2px 8px #cfc2eb; */
+    padding: 15px;
+  }
+  .miIco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 10px;
+  }

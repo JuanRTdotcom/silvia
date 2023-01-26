@@ -1,0 +1,97 @@
+.agregar_fichas{
+    padding: 12px 20px !important;
+    color: #ffffff;
+    background-color: #101010;
+    border-color: #101010;
+    outline: none;
+    font-weight: 600;
+}
+.agregar_fichas:hover, .agregar_fichas:active,.agregar_fichas:focus,.agregar_fichas:active:hover{
+    padding: 12px 20px !important;
+    color: white;
+    background-color: #101010;
+    border-color: #101010;
+    outline: none;
+    font-weight: 600;
+}
+
+.box_info_user{
+    display: flex;
+}
+.info_user .nombre_user{
+text-align: left;
+font-size: 12px;
+font-weight: 700;
+}
+.info_user .dni_user{
+    text-align: left;
+    font-size: 10px;
+    /* font-weight: 700; */
+    color:#A1A5B7 !important;
+}
+.genero_tabla{
+    width: 40px;
+    background: #ffffff !important;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 8px;
+    border: 1px #dddddd solid;
+}
+.info_edad{
+    color:#A1A5B7 !important;
+    display: contents;
+    font-size: 12px;
+}
+._edad_i{
+    font-size: 14px;
+    font-weight: 600;
+    color: #17213c;
+}
+
+.mi_box_btn_agregar_m{
+    display: none;
+}
+.mi_box_btn_agregar_g{
+    display: block;
+}
+.separador_m{
+    height: 30px;
+}
+
+.card_ficha {
+    border: 1px #ffffff solid;
+    border-radius: 4px;
+    padding: 15px 5px 5px 5px;
+    background: white;
+    display: grid;
+    box-shadow: 0 2px 10px #00000021;
+  }
+  .card_titulo{
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #17213C;
+      text-align: center;
+  }
+.select2-container{
+width: 100% !important;
+}
+@media only screen and (max-width: 767px) {
+	.mi_box_btn_agregar_m{
+        display: block;
+        margin-top: 10px;
+    }
+    .mi_box_btn_agregar_g{
+        display: none;
+    }
+    ._titulo {
+        font-size: 30px;
+    }
+    .agregar_fichas{
+        width: 100%;
+    }
+    .separador_m{
+        height: 10px;
+    }
+  }
+
